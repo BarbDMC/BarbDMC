@@ -1,4 +1,28 @@
 @charset "UTF-8";
+/* 
+* {
+  overflow-y: hidden;
+} */
+
+.sectionTitle{
+  color: #707070;
+  opacity: 80%;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+
+}
+
+.sectionHighlighter{
+  color: #8089DF;
+}
+
+.sectionDivider{
+  color:#65BCE9;
+  font-weight: 3px;
+  text-align: center;
+}
 
 .listElement {
   font-weight: bold;
@@ -29,3 +53,119 @@
   opacity: 90%;
 }
 
+.rectangle{
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+.firstRectangle {
+  width: 1047px;
+  height: 553px;
+  margin-top: -280px;
+  margin-right: -160px;
+  float: right;
+  overflow-y: hidden;
+}
+
+.leftRectangle {
+  width: 465px;
+  height: 279px;
+  margin-top: -140px;
+}
+
+.rigthRectangle {
+  width: 457px;
+  height: 279px;
+  margin-top: 50px;
+  margin-right: -1050px;
+  float: right;
+}
+
+.bigCircle{
+  color: #FFFFFF;
+  width: 280px;
+  height: 280px;
+  float: right;
+  margin-right: -500px;
+  margin-top: -70px;
+}
+
+.smallCircle{
+  color: #FFFFFF;
+  width: 220px;
+  height: 220px;
+  float: right;
+  margin-right: -470px;
+  margin-top: -40px;
+}
+
+.profilePicture{
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  float: right;
+  margin-right: -450px;
+  margin-top: -20px;
+}
+
+.main{
+  margin-top: 200px;
+  margin-left: 50px;
+}
+
+.mainText {
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif;
+  color: #707070;
+  margin: 12px;
+}
+
+.mainTitle {
+  font-size: 52px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: #707070;
+}
+
+.name {
+  color: #8089DF;
+}
+
+.workExpirenceSection{
+  margin-top: 243px;
+}
+
+.workImages{
+  float: left;
+}
+
+.bigWave {
+  width: 725px;
+  height: 733px;
+  margin-left: -10px;
+}
+
+.smallWave {
+  width: 671px;
+  height: 711px;
+  margin-left: -750px;
+}
+
+.workLogo{
+  width: 500px;
+  height: 500px;
+  margin-left: -500px;
+}
+
+.workText {
+  margin-top: 180px;
+  margin-right: 218px;
+  float: right;
+}
+
+.workTitle{
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #8089DF;
+}

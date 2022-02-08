@@ -14,13 +14,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;1,100&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;700&family=Roboto:ital,wght@0,100;0,700;1,100&display=swap" rel="stylesheet"> 
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
         <!--Navbar section-->
         <div>
             <ul>
-                <a><li class="listElement">Work Expirence</li></a>
+                <a href="#workExperience"><li class="listElement">Work Expirence</li></a>
                 <a><li class="listElement">Skills and tools</li></a>
                 <a><li class="listElement">Projects</li></a>
                 <a><li class="listElement">Contact</li></a>
@@ -42,9 +45,42 @@
         
         <!--Main section-->
         <div>
-            <img src="assets/img/Rectangulo lateral izquierdo.png" />
-            <img src="assets/img/Rectangulo central.png" />
-            <img src="assets/img/Rectangulo Lateral derecho.png" />
+            <img class="rectangle leftRectangle" src="assets/img/Rectangulo lateral izquierdo.png" />
+            <img class="firstRectangle" src="assets/img/Rectangulo central.png" />
+            <img class="bigCircle" src="assets/img/Circulo grande.png" />
+            <img class="smallCircle" src="assets/img/Circulo pequeño.png" />
+            <img class="profilePicture" src="assets/img/avatar.jpg" />
+            <img class="rectangle rigthRectangle" src="assets/img/Rectangulo Lateral derecho.png" />
+        </div>
+
+        <div class="main">
+            <p class="mainText">Hey, there!</p>
+            <h1 class="mainTitle">I am <span class="mainTitle name">Barbara Morantes</span></h1>
+            <p class="mainText">In each area in which I have had the opportunity to</p>
+            <p class="mainText">perform, I always give my best so my work and</p>
+            <p class="mainText">my  relationships with the team are excellent. My main</p>
+            <p class="mainText">objective is to stay in constant development at a</p>
+            <p class="mainText">personal, academic and professional level.</p>
+        </div>
+
+        <!-- work experience section -->
+        <div id="workExperience" class="workExpirenceSection">
+            <h2 class="sectionTitle">Work <span class="sectionTitle sectionHighlighter">Expirence</span></h2>
+            <div class="sectionDivider"><img src="assets/img/Lineas DelTitulo.png" /></div>
+            
+            <div class="workImages">
+                <img src="assets/img/Onda grande.png" />
+                <img class="smallWave" src="assets/img/Onda pequeña.png" />
+                <img class="workLogo" src="assets/img/idukay.svg" />
+            </div>
+
+            <div class="workText">
+                <h3 class="workTitle">Full Stack Developer Intern</h3>
+                <p class="mainText"><b>Idukay</b> 4 month(s)</p>
+                <p class="mainText">Quito - Ecuador</p>
+                <p class="mainText">Functional responsibilities: //Insert Here</p>
+            </div>
+
         </div>
     </body>
 </html>
