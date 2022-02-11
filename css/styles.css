@@ -1,8 +1,16 @@
 @charset "UTF-8";
-/* 
-* {
-  overflow-y: hidden;
-} */
+
+body{
+  overflow-x: hidden;
+}
+
+.divisor {
+  height: 200px;
+}
+
+.tableDivisor {
+  height: 80px;
+}
 
 .sectionTitle{
   color: #707070;
@@ -11,7 +19,7 @@
   font-weight: bold;
   font-family: 'Nunito', sans-serif;
   text-align: center;
-
+  
 }
 
 .sectionHighlighter{
@@ -41,7 +49,6 @@
 }
 
 .socialMediaNavBar{
-  height: 32px;
   margin: 40px;
   color: #FFFFFF;
   opacity: 80%;
@@ -59,53 +66,43 @@
 }
 
 .firstRectangle {
-  width: 1047px;
-  height: 553px;
-  margin-top: -280px;
-  margin-right: -160px;
-  float: right;
-  overflow-y: hidden;
+  position: absolute;
+  top: -258px;
+  right: -248px;
 }
 
 .leftRectangle {
-  width: 465px;
-  height: 279px;
-  margin-top: -140px;
+  position: absolute;
+  top: -251px;
 }
 
 .rigthRectangle {
-  width: 457px;
-  height: 279px;
-  margin-top: 50px;
-  margin-right: -1050px;
-  float: right;
+  position: absolute;
+  top: 426px;
+  right: -270px;
 }
 
 .bigCircle{
   color: #FFFFFF;
-  width: 280px;
-  height: 280px;
-  float: right;
-  margin-right: -500px;
-  margin-top: -70px;
+  position: absolute;
+  top: 205px;
+  right: 276px;
 }
 
 .smallCircle{
   color: #FFFFFF;
-  width: 220px;
-  height: 220px;
-  float: right;
-  margin-right: -470px;
-  margin-top: -40px;
+  position: absolute;
+  top: 236px;
+  right: 303px;
 }
 
 .profilePicture{
   border-radius: 50%;
-  width: 180px;
-  height: 180px;
-  float: right;
-  margin-right: -450px;
-  margin-top: -20px;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 277px;
+  right: 342px;
 }
 
 .main{
@@ -154,7 +151,9 @@
 .workLogo{
   width: 500px;
   height: 500px;
-  margin-left: -500px;
+  left: 37px;
+  position: absolute;
+  top: 1329px;
 }
 
 .workText {
@@ -168,4 +167,23 @@
   font-size: 40px;
   font-weight: bold;
   color: #8089DF;
+}
+
+.skillsToolsSection {
+  margin-top: 88px;
+  height: 768px;
+  width: 100%;
+  background-color: #F8F5F5;
+}
+
+.skillAreas{
+  margin-bottom: 80px;
+}
+
+.area{
+  border: #65BCE9 1px solid;
+  width: 290px;
+  height: 381px;
+  margin-left: 80px;
+  display: inline-block;
 }
