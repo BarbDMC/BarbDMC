@@ -4,12 +4,16 @@ body{
   overflow-x: hidden;
 }
 
+.smallDivisor {
+  height: 80px;
+}
+
 .divisor {
   height: 200px;
 }
 
-.tableDivisor {
-  height: 80px;
+.biggerDivisor {
+  height: 800px;
 }
 
 .sectionTitle{
@@ -30,6 +34,10 @@ body{
   color:#65BCE9;
   font-weight: 3px;
   text-align: center;
+}
+
+.lineSpacer {
+  line-height : 60px;
 }
 
 .listElement {
@@ -177,13 +185,142 @@ body{
 }
 
 .skillAreas{
+  margin-top: 80px;
   margin-bottom: 80px;
 }
 
 .area{
-  border: #65BCE9 1px solid;
   width: 290px;
   height: 381px;
-  margin-left: 80px;
-  display: inline-block;
+  border-radius: 30px;
+  background-color:  #FFFFFF;
+  opacity: 80%;
+}
+
+.areasContainer{
+  width: 100%;
+  display: inline-flex;
+}
+
+.left{
+  float:left;
+  margin-left: 400px;
+}
+
+.right{
+  float:right;
+  margin-right: 400px;
+}
+
+.center{
+  margin:0 auto;
+}
+
+.iconMargin {
+  margin: 24px;
+}
+
+.areaIcon {
+  width: 100px;
+  height: 100px;
+  margin-left: 68px;
+}
+
+.areaTitle {
+  margin: 25px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  color: #65BCE9;
+  opacity: 80%;
+  text-align: center;
+}
+
+.areaList{
+  text-align: center;
+}
+
+.areaListElement{
+  list-style: none;
+  margin-right: 35px;
+  Color:#707070;
+  opacity: 80%;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  line-height : 40px;
+}
+
+.projectsSection{
+  margin-top: 100px;
+}
+
+.projectContainer{
+  margin: auto;
+  width: 50%;
+  height: 1000px;
+  text-align: center;
+}
+
+.projectImage {
+  opacity: 97%;
+  border-radius: 20px;
+  width: 700px;
+  height: 442px;
+  position: relative;
+  top: -11px;
+  z-index: 2;
+}
+
+.projectWave{
+  position: relative;
+  top: -330px;
+  z-index: 1;
+}
+
+.projectDescriptionContainer{
+  width: 550px;
+  height: 573px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  position: relative;
+  z-index: 3;
+  top: -1060px;
+}
+
+.projectTitle{
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #707070;
+  opacity: 80%;
+  margin-top: 80px;
+}
+
+.projectStatus{
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #707070;
+  opacity: 80%;
+  margin-top: 40px;
+}
+
+.projectDescription{
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  color: #707070;
+  opacity: 80%;
+  margin: 32px 10px 0px 10px;
+  line-height : 43px;
+}
+
+.projectTechnologies{
+  font-family: 'Roboto', sans-serif;
+  margin-top: 32px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #51E1A7;
+  line-height : 43px;
+  opacity: 80%;
 }
