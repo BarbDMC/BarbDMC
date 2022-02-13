@@ -26,12 +26,12 @@
                 <a href="#workExperience"><li class="listElement">Work Expirence</li></a>
                 <a href="#skillsTools"><li class="listElement">Skills and tools</li></a>
                 <a href="#projects"><li class="listElement">Projects</li></a>
-                <a><li class="listElement">Contact</li></a>
+                <a href="#contact"><li class="listElement">Contact</li></a>
             </ul>
         </div>
         
         <!--Navbar social media icons-->
-        <div>
+        <div class="socialMediaContainer">
             <a class="socialMediaNavBar" target="_blank" href="https://www.linkedin.com/in/barbara-morantes-carvajal/">
                 <i class="fab fa-linkedin-in"></i>
             </a>
@@ -45,15 +45,15 @@
         
         <!--Main section-->
         <div>
-            <img class="rectangle leftRectangle" src="assets/img/Rectangulo lateral izquierdo.png" />
-            <img class="firstRectangle" src="assets/img/Rectangulo central.png" />
-            <img class="bigCircle" src="assets/img/Circulo grande.png" />
-            <img class="smallCircle" src="assets/img/Circulo pequeño.png" />
+            <img class="rectangle leftRectangle" src="assets/img/leftRectangle.png" />
+            <img class="firstRectangle" src="assets/img/centerRectangle.png" />
+            <img class="bigCircle" src="assets/img/bigCircle.png" />
+            <img class="smallCircle" src="assets/img/smallCircle.png" />
             <img class="profilePicture" src="assets/img/avatar.jpg" />
-            <img class="rectangle rigthRectangle" src="assets/img/Rectangulo Lateral derecho.png" />
+            <img class="rectangle rigthRectangle" src="assets/img/rightRectangle.png" />
         </div>
 
-        <div class="divisor"></div>
+        <div class="divisor-200"></div>
 
         <div class="main">
             <p class="mainText">Hey, there!</p>
@@ -68,11 +68,11 @@
         <!-- work experience section -->
         <div id="workExperience" class="workExpirenceSection">
             <h2 class="sectionTitle">Work <span class="sectionTitle sectionHighlighter">Expirence</span></h2>
-            <div class="sectionDivider"><img src="assets/img/Lineas DelTitulo.png" /></div>
+            <div class="sectionDivider"><img src="assets/img/titleLines.png" /></div>
             
             <div class="workImages">
-                <img src="assets/img/Onda grande.png" />
-                <img class="smallWave" src="assets/img/Onda pequeña.png" />
+                <img src="assets/img/bigWave.png" />
+                <img class="smallWave" src="assets/img/smallWave.png" />
                 <img class="workLogo" src="assets/img/idukay.svg" />
             </div>
             
@@ -80,16 +80,17 @@
                 <h3 class="workTitle">Full Stack Developer Intern</h3>
                 <p class="mainText lineSpacer"><b>Urban Lab</b> 4 month(s)</p>
                 <p class="mainText lineSpacer">Quito - Ecuador</p>
-                <p class="mainText lineSpacer">Functional responsibilities: //Insert Here</p>
+                <p class="mainText lineSpacer">Functional responsibilities: Maintenance and bug fixing of  <br />
+                    the idukay platform in frontend and backend.</p>
             </div>
         </div>
         
-        <div class="biggerDivisor"></div>
+        <div class="divisor-800"></div>
 
         <!-- skills and tools section -->
         <div id="skillsTools" class="skillsToolsSection">
             <h2 class="sectionTitle">Skills <span class="sectionTitle sectionHighlighter">and tools</span></h2>
-            <div class="sectionDivider"><img src="assets/img/Lineas DelTitulo.png" /></div>
+            <div class="sectionDivider"><img src="assets/img/titleLines.png" /></div>
             
             <div class="skillAreas">
                 <div class="areasContainer">
@@ -103,6 +104,9 @@
                                 </li>
                                 <li class="areaListElement">
                                     CSS
+                                </li>
+                                <li class="areaListElement">
+                                    AngularJs
                                 </li>
                                 <li class="areaListElement">
                                     Javascript
@@ -148,12 +152,12 @@
         <!-- Projects Section -->
         <div id="projects" class="projectsSection">
             <h2 class="sectionTitle">Projects</h2>
-            <div class="sectionDivider"><img src="assets/img/Lineas DelTitulo.png" /></div>
-            <div class="smallDivisor"></div>
+            <div class="sectionDivider"><img src="assets/img/titleLines.png" /></div>
+            <div class="divisor-80"></div>
 
             <div class="projectContainer">
-                <img class="projectImage" src="assets/img/portfolio/mysql-logo.png"/>
-                <img class="projectWave" src="assets/img/OndaProjects.png" />
+                <img class="projectImage" src="assets/img/portfolio/mysql-logo.svg"/>
+                <img class="projectWave" src="assets/img/projectsWave.png" />
 
                 <div class="projectContainer projectDescriptionContainer">
                     <h3 class="projectTitle">Academic offer in Ecuador</h3>
@@ -164,6 +168,35 @@
                         <p class="projectTechnologies">Technologies used: <br />
                             HTML, CSS, MySQL, Javascript</p>
                 </div>
+            </div>
+        </div>
+
+        <div class="divisor-600"></div>
+
+        <!-- footer -->
+        <div id="contact" class="footer">
+
+            <div class="contact">
+                <h3 class="contactTitle">Contact</h3>
+                <div>
+                    <a class="socialMediaFooter" target="_blank" href="https://www.linkedin.com/in/barbara-morantes-carvajal/">
+                        <i class="fab fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="socialMediaFooter" target="_blank" href="https://github.com/BarbDMC">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="socialMediaFooter" target="_blank" href="https://twitter.com/BarbDMG">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contactForm">
+                <input class="firstFieldSpace formFields formText inputSize" type="text" id="firstName" name="firstName" placeholder="First Name" />
+                <input class="fieldsSpace formFields formText inputSize" type="text" id="lastName" name="lastName" placeholder="Last Name" />
+                <input class="fieldsSpace formFields formText inputSize" type="text" id="email" name="email" placeholder="E-mail" />
+                <textarea class="fieldsSpace formFields formText textAreaSize" name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <input class="formButton" type="submit" value="Send">
             </div>
         </div>
     </body>

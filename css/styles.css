@@ -2,17 +2,22 @@
 
 body{
   overflow-x: hidden;
+  margin: 0;
 }
 
-.smallDivisor {
+.divisor-80 {
   height: 80px;
 }
 
-.divisor {
+.divisor-200 {
   height: 200px;
 }
 
-.biggerDivisor {
+.divisor-600 {
+  height: 600px;
+}
+
+.divisor-800 {
   height: 800px;
 }
 
@@ -56,11 +61,18 @@ body{
   opacity: 75%;
 }
 
+.socialMediaContainer{
+  position: absolute; 
+  top: 41px;
+  right: 9px;
+  z-index: 1;
+}
+
 .socialMediaNavBar{
   margin: 40px;
   color: #FFFFFF;
   opacity: 80%;
-  float: right;
+  font-size: 32px;
 }
 
 .socialMediaNavBar:hover {
@@ -165,8 +177,8 @@ body{
 }
 
 .workText {
-  margin-top: 180px;
-  margin-right: 218px;
+  margin-top: 182px;
+  margin-right: 106px;
   float: right;
 }
 
@@ -265,10 +277,10 @@ body{
 .projectImage {
   opacity: 97%;
   border-radius: 20px;
-  width: 700px;
+  width: 900px;
   height: 442px;
   position: relative;
-  top: -11px;
+  top: 36px;
   z-index: 2;
 }
 
@@ -279,7 +291,7 @@ body{
 }
 
 .projectDescriptionContainer{
-  width: 550px;
+  width: 525px;
   height: 573px;
   background-color: #FFFFFF;
   border-radius: 5px;
@@ -323,4 +335,97 @@ body{
   color: #51E1A7;
   line-height : 43px;
   opacity: 80%;
+}
+
+.footer {
+  height: 464px;
+  width: 100%;
+  background-color: #F8F5F5;
+  display: inline-flex;
+  padding-top: 100px;
+}
+
+.contact{
+  display: inline;
+  margin-top: -104px;
+  margin-left: 100px;
+}
+
+.contactTitle{
+  font-family: 'Nunito', sans-serif;
+  font-size: 48px;
+  color:#707070;
+  opacity: 80%;
+  margin-top: 146px;
+  margin-left: 25px;
+  text-align: left;
+}
+
+.socialMediaFooter {
+  margin: 32px;
+  color: #000000;
+  opacity: 75%;
+  font-size: 64px;;
+}
+
+.contactForm {
+  background-color:#51E1A7;
+  opacity: 96%;
+  width :759px;
+  height: 668px; 
+  border-radius: 10px;
+  float: right;
+  margin-top: -287px;
+  margin-left: 364px;
+}
+
+.firstFieldSpace {
+  margin-top: 54px;
+}
+
+.fieldsSpace{
+  margin-top: 24px;
+}
+
+.formFields{
+  border:none;
+  margin-left: 130px;
+  margin-right: 130px;
+  border-radius: 5px;
+}
+
+.inputSize {
+  width: 500px;
+  height: 30px;
+}
+
+.textAreaSize {
+  width: 500px;
+  height: 214px;
+  resize: none;
+}
+
+.formText{
+ font-Family: 'Roboto', sans-serif;
+ font-size: 24px;
+ color:#000000;
+ padding-top: 16px;
+ padding-bottom: 16px;
+ padding-left: 16px;
+}
+
+.formButton {
+ margin-top: 32px;
+ margin-left: 130px;
+ margin-right: 130px;
+ margin-bottom: 50px;
+ background-color: #8089DF;
+ width: 300px;
+ height: 62px;
+ border-color: #FFFFFF;
+ border-radius:10px;
+ font-family: 'Roboto', sans-serif;
+ font-size: 32px;
+ color:#FFFFFF;
+ opacity: 90%;
 }
