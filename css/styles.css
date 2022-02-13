@@ -157,15 +157,17 @@ body{
 }
 
 .bigWave {
-  width: 725px;
-  height: 733px;
   margin-left: -10px;
 }
 
 .smallWave {
-  width: 671px;
-  height: 711px;
   margin-left: -750px;
+}
+
+@-moz-document url-prefix() {
+  .smallWave {
+    display: none;
+  }
 }
 
 .workLogo{
