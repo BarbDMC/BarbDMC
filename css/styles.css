@@ -17,9 +17,6 @@ body{
   height: 600px;
 }
 
-.divisor-800 {
-  height: 800px;
-}
 
 .sectionTitle{
   color: #707070;
@@ -153,33 +150,25 @@ body{
 }
 
 .workImages{
-  float: left;
+  position: relative;
 }
 
-.bigWave {
-  margin-left: -10px;
-}
 
 .smallWave {
   margin-left: -750px;
 }
 
-@-moz-document url-prefix() {
-  .smallWave {
-    display: none;
-  }
-}
-
 .workLogo{
   width: 500px;
   height: 500px;
-  left: 37px;
-  position: absolute;
-  top: 1329px;
+  position: relative;
+  top: -81px;
+  left: -600px;
+  z-index: 3;
 }
 
 .workText {
-  margin-top: 182px;
+  margin-top: -545px;
   margin-right: 106px;
   float: right;
 }
