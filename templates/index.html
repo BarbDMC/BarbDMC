@@ -17,8 +17,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;700&family=Roboto:ital,wght@0,100;0,700;1,100&display=swap" rel="stylesheet"> 
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/normalize.css" rel="stylesheet" />
+        <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+        <link href="{{ url_for('static', filename='css/normalize.css') }}" rel="stylesheet" />
     </head>
     <body>
         <!--Navbar section-->
@@ -46,12 +46,12 @@
         
         <!--Main section-->
         <div>
-            <img class="rectangle leftRectangle" src="assets/img/leftRectangle.png" />
-            <img class="firstRectangle" src="assets/img/centerRectangle.png" />
-            <img class="bigCircle" src="assets/img/bigCircle.png" />
-            <img class="smallCircle" src="assets/img/smallCircle.png" />
-            <img class="profilePicture" src="assets/img/avatar.jpg" />
-            <img class="rectangle rigthRectangle" src="assets/img/rightRectangle.png" />
+            <img class="rectangle leftRectangle" src="{{ url_for('static', filename='assets/img/leftRectangle.png') }}" />
+            <img class="firstRectangle" src="{{ url_for('static', filename='assets/img/centerRectangle.png') }}" />
+            <img class="bigCircle" src="{{ url_for('static', filename='assets/img/bigCircle.png') }}" />
+            <img class="smallCircle" src="{{ url_for('static', filename='assets/img/smallCircle.png') }}" />
+            <img class="profilePicture" src="{{ url_for('static', filename='assets/img/avatar.jpg') }}" />
+            <img class="rectangle rigthRectangle" src="{{ url_for('static', filename='assets/img/rightRectangle.png') }}" />
         </div>
 
         <div class="divisor-200"></div>
@@ -69,12 +69,12 @@
         <!-- work experience section -->
         <div id="workExperience" class="workExpirenceSection">
             <h2 class="sectionTitle">Work <span class="sectionTitle sectionHighlighter">Expirence</span></h2>
-            <div class="sectionDivider"><img src="assets/img/titleLines.png" /></div>
+            <div class="sectionDivider"><img src="{{ url_for('static', filename='assets/img/titleLines.png') }}" /></div>
             
             <div class="workImages">
-                <img  src="assets/img/bigWave.png" />
-                <img class="smallWave" src="assets/img/smallWave.png" />
-                <img class="workLogo" src="assets/img/idukay.svg" />
+                <img  src="{{ url_for('static', filename='assets/img/bigWave.png') }}" />
+                <img class="smallWave" src="{{ url_for('static', filename='assets/img/smallWave.png') }}" />
+                <img class="workLogo" src="{{ url_for('static', filename='assets/img/idukay.svg') }}" />
             </div>
             
             <div class="workText">
@@ -91,13 +91,13 @@
         <!-- skills and tools section -->
         <div id="skillsTools" class="skillsToolsSection">
             <h2 class="sectionTitle">Skills <span class="sectionTitle sectionHighlighter">and tools</span></h2>
-            <div class="sectionDivider"><img src="assets/img/titleLines.png" /></div>
+            <div class="sectionDivider"><img src="{{ url_for('static', filename='assets/img/titleLines.png') }}" /></div>
             
             <div class="skillAreas">
                 <div class="areasContainer">
                     <div class="area left">
                         <div class="iconMargin">
-                            <img class="areaIcon" src="assets/img/skills/frontend.svg"/>
+                            <img class="areaIcon" src="{{ url_for('static', filename='assets/img/skills/frontend.svg') }}"/>
                             <div class="areaTitle">Fronted</div>
                             <ul class="areaList">
                                 <li class="areaListElement">
@@ -117,7 +117,7 @@
                     </div>
                     <div class="area center">
                         <div class="iconMargin">
-                            <img class="areaIcon" src="assets/img/skills/backend.png"/>
+                            <img class="areaIcon" src="{{ url_for('static', filename='assets/img/skills/backend.png') }}"/>
                             <div class="areaTitle">Backend</div>
                             <ul class="areaList">
                                 <li class="areaListElement">
@@ -134,7 +134,7 @@
                     </div>
                     <div class="area right">
                         <div class="iconMargin">
-                            <img class="areaIcon" src="assets/img/skills/testing.png"/>
+                            <img class="areaIcon" src="{{ url_for('static', filename='assets/img/skills/testing.png') }}"/>
                             <div class="areaTitle">Testing</div>
                             <ul class="areaList">
                                 <li class="areaListElement">
@@ -153,12 +153,12 @@
         <!-- Projects Section -->
         <div id="projects" class="projectsSection">
             <h2 class="sectionTitle">Projects</h2>
-            <div class="sectionDivider"><img src="assets/img/titleLines.png" /></div>
+            <div class="sectionDivider"><img src="{{ url_for('static', filename='assets/img/titleLines.png') }}" /></div>
             <div class="divisor-80"></div>
 
             <div class="projectContainer">
-                <img class="projectImage" src="assets/img/portfolio/mysql-logo.svg"/>
-                <img class="projectWave" src="assets/img/projectsWave.png" />
+                <img class="projectImage" src="{{ url_for('static', filename='assets/img/portfolio/mysql-logo.svg') }}"/>
+                <img class="projectWave" src="{{ url_for('static', filename='assets/img/projectsWave.png') }}" />
 
                 <div class="projectContainer projectDescriptionContainer">
                     <h3 class="projectTitle">Academic offer in Ecuador</h3>
@@ -192,13 +192,13 @@
                 </div>
             </div>
 
-            <div class="contactForm">
+            <form class="contactForm" action="/" method="POST">
                 <input class="firstFieldSpace formFields formText inputSize" type="text" id="firstName" name="firstName" placeholder="First Name" />
                 <input class="fieldsSpace formFields formText inputSize" type="text" id="lastName" name="lastName" placeholder="Last Name" />
                 <input class="fieldsSpace formFields formText inputSize" type="text" id="email" name="email" placeholder="E-mail" />
                 <textarea class="fieldsSpace formFields formText textAreaSize" name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
                 <input class="formButton" type="submit" value="Send">
-            </div>
+            </form>
         </div>
     </body>
 </html>
