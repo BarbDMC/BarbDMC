@@ -1,9 +1,8 @@
+import os
 from flask import Flask, render_template, redirect, url_for, request, flash
 from flask_mail import Mail, Message
-import os
 
 app = Flask(__name__)
-port = int(os.environ.get('PORT', 5000))
 app.config['SECRET_KEY'] = 'secret!'
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
@@ -36,4 +35,4 @@ def index():
   return render_template("index.html")
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
