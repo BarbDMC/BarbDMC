@@ -21,6 +21,13 @@
         <link href="{{ url_for('static', filename='css/normalize.css') }}" rel="stylesheet" />
     </head>
     <body>
+        {% for message in get_flashed_messages() %}
+            <div class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                {{ message }}
+            </div>
+        {% endfor %}
+
         <!--Navbar section-->
         <div>
             <ul>
@@ -193,10 +200,17 @@
             </div>
 
             <form class="contactForm" action="/" method="POST">
-                <input class="firstFieldSpace formFields formText inputSize" type="text" id="firstName" name="firstName" placeholder="First Name" />
-                <input class="fieldsSpace formFields formText inputSize" type="text" id="lastName" name="lastName" placeholder="Last Name" />
-                <input class="fieldsSpace formFields formText inputSize" type="text" id="email" name="email" placeholder="E-mail" />
-                <textarea class="fieldsSpace formFields formText textAreaSize" name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <input class="firstFieldSpace formFields formText inputSize" type="text" id="firstName" name="firstName" placeholder="First Name" required/>
+                <input class="fieldsSpace formFields formText inputSize" type="text" id="lastName" name="lastName" placeholder="Last Name" required/>
+                <input class="fieldsSpace formFields formText inputSize" 
+                       type="email" 
+                       id="email" 
+                       name="email" 
+                       placeholder="E-mail"
+                       required 
+                       pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"
+                />
+                <textarea class="fieldsSpace formFields formText textAreaSize" name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
                 <input class="formButton" type="submit" value="Send">
             </form>
         </div>
