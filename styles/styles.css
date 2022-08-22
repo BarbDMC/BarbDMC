@@ -68,7 +68,6 @@ body{
 
 .listElement {
   font-weight: bold;
-  font-size: 28px;
   font-family: 'Roboto', sans-serif;
   color :#707070;
   opacity: 75%;
@@ -109,10 +108,12 @@ body{
 .firstRectangle {
   position: absolute;
   top: -258px;
-  right: -248px;
+  right: -200px;
 }
 
 .leftRectangle {
+  /* width: 150px;
+  height: 200px; */
   position: absolute;
   top: -251px;
 }
@@ -152,7 +153,7 @@ body{
 }
 
 .mainText {
-  font-size: 32px;
+  font-size: 18px;
   font-family: 'Roboto', sans-serif;
   color: #707070;
   margin: 12px;
@@ -254,12 +255,8 @@ body{
 
 .areaTitle {
   margin: 25px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: bold;
-  font-size: 35px;
   color: #65BCE9;
   opacity: 80%;
-  text-align: center;
 }
 
 .areaList{
