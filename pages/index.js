@@ -23,48 +23,48 @@ export default function Home() {
         <div className='mt-4 mx-32 flex justify-between items-center'>
           <div>
             <ul>
-              <a href="#workExperience"><li className="listElement text-lg">Work Expirence</li></a>
-              <a href="#skillsTools"><li className="listElement text-lg">Skills and tools</li></a>
-              <a href="#projects"><li className="listElement text-lg">Projects</li></a>
-              <a href="#contact"><li className="listElement text-lg">Contact</li></a>
+              <a href="#workExperience"><li className="font-bold font-roboto text-gray-500 text-lg opacity-75 float-left m-8">Work Expirence</li></a>
+              <a href="#skillsTools"><li className="font-bold font-roboto text-gray-500 text-lg opacity-75 float-left m-8">Skills and tools</li></a>
+              <a href="#projects"><li className="font-bold font-roboto text-gray-500 text-lg opacity-75 float-left m-8">Projects</li></a>
+              <a href="#contact"><li className="font-bold font-roboto text-gray-500 text-lg opacity-75 float-left m-8">Contact</li></a>
             </ul>
           </div>
-          <div className='grid grid-cols-3 gap-3'>
+          <div className='grid grid-cols-3 gap-3 z-50'>
             <a className="text-2xl" target="_blank" href="https://www.linkedin.com/in/barbara-morantes-carvajal/" rel='noreferrer'>
-              <i className="fab fa-linkedin-in"></i>
+              <i className="fab fa-linkedin-in text-white"></i>
             </a>
             <a className="text-2xl" target="_blank" href="https://github.com/BarbDMC" rel='noreferrer'>
-              <i className="fab fa-github"></i>
+              <i className="fab fa-github text-white"></i>
             </a>
             <a className="text-2xl" target="_blank" href="https://twitter.com/BarbDMG" rel='noreferrer'>
-              <i className="fab fa-twitter"></i>
+              <i className="fab fa-twitter text-white"></i>
             </a>
           </div>
         </div>
 
 
-        {/* <div>
-            <img className=" absolute -top-64" src="/assets/img/leftRectangle.png" alt='leftRectangle' />
-            <img className="firstRectangle" src="/assets/img/centerRectangle.png" alt='centerRectangle' layout='fill' />
-            <img className="bigCircle" src="/assets/img/bigCircle.png" alt='bigCircle' layout='fill' />
-            <img className="smallCircle" src="/assets/img/smallCircle.png" alt='smallCircle' layout='fill' />
-            <img className="profilePicture" src="/assets/img/avatar.jpg" alt='avatar' layout='fill' />
-            <img className="rectangle rigthRectangle" src="/assets/img/rightRectangle.png" alt='rightRectangle' layout='fill' />
-          </div> */}
+        <div>
+          <img className=" absolute -top-56 left-[50%] w-1/4" src="/assets/img/leftRectangle.png" alt='leftRectangle' />
+          <img className="absolute -top-52 -right-12  w-1/2 z-30" src="/assets/img/centerRectangle.png" alt='centerRectangle' layout='fill' />
+          <img className="absolute top-24 right-72 w-72 z-40" src="/assets/img/bigCircle.png" alt='bigCircle' layout='fill' />
+          <img className="absolute top-26 right-[302px] w-64 z-40" src="/assets/img/smallCircle.png" alt='smallCircle' layout='fill' />
+          <img className="absolute rounded-full w-60 top-[115px] right-[310px] z-40" src="/assets/img/avatar.jpg" alt='avatar' layout='fill' />
+          <img className="absolute -right-40 top-32 w-1/3" src="/assets/img/rightRectangle.png" alt='rightRectangle' layout='fill' />
+        </div>
 
-        <div className="mt-10 mx-40">
-          <p className="font-bold text-xl text-gray-500 leading-10">Hey, there!</p>
-          <h1 className="font-bold text-4xl text-gray-500 mb-2">I am <span className="sectionHighlighter">Barbara Morantes</span></h1>
-          <p className="font-thin text-lg text-gray-500">In each area in which I have had the opportunity to</p>
-          <p className="font-thin text-lg text-gray-500">perform, I always give my best so my work and</p>
-          <p className="font-thin text-lg text-gray-500">my  relationships with the team are excellent. My main</p>
-          <p className="font-thin text-lg text-gray-500">objective is to stay in constant development at a</p>
-          <p className="font-thin text-lg text-gray-500">personal, academic and professional level.</p>
+        <div className="mt-32 mx-40">
+          <p className="font-bold text-2xl text-gray-500 mb-5">Hey, there!</p>
+          <h1 className="font-bold text-4xl text-gray-500 mb-5">I am <span className="text-[#8089DF]">Barbara Morantes</span></h1>
+          <p className="font-thin text-xl text-gray-500">In each area in which I have had the opportunity to</p>
+          <p className="font-thin text-xl text-gray-500">perform, I always give my best so my work and</p>
+          <p className="font-thin text-xl text-gray-500">my  relationships with the team are excellent. My main</p>
+          <p className="font-thin text-xl text-gray-500">objective is to stay in constant development at a</p>
+          <p className="font-thin text-xl text-gray-500">personal, academic and professional level.</p>
         </div>
 
         <div id="workExperience" className="mt-60">
           <div className="flex flex-col items-center">
-            <h2 className="font-nunito font-bold text-4xl text-gray-500 opacity-80">Work <span className="sectionHighlighter">Expirence</span></h2>
+            <h2 className="font-nunito font-bold text-4xl text-gray-500 opacity-80">Work <span className="text-[#8089DF]">Expirence</span></h2>
             <img src="/assets/img/titleLines.png" />
           </div>
 
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
 
             <div className="mr-10 max-w-2xl">
-              <h3 className="font-roboto text-4xl sectionHighlighter font-bold">Full Stack Developer</h3>
+              <h3 className="font-roboto text-4xl text-[#8089DF] font-bold">Full Stack Developer</h3>
               <p className="text-xl font-roboto text-gray-500 mt-3"><b>Urban Lab</b> 10 month(s)</p>
               <p className="text-xl font-roboto text-gray-500 my-8">Quito - Ecuador</p>
               <p className="text-xl font-roboto text-gray-500 my-8 max-w-xl">
@@ -91,7 +91,7 @@ export default function Home() {
 
         <div id="skillsTools" className="mt-20 pt-5 pb-5 bg-[#F8F5F5]">
           <div className="flex flex-col items-center">
-            <h2 className="font-nunito font-bold text-4xl text-gray-500 opacity-80">Skills <span className="sectionHighlighter">and tools</span></h2>
+            <h2 className="font-nunito font-bold text-4xl text-gray-500 opacity-80">Skills <span className="text-[#8089DF]">and tools</span></h2>
             <img src="/assets/img/titleLines.png" />
           </div>
 
@@ -184,26 +184,26 @@ export default function Home() {
         </div>
       </main>
 
-      <footer id="contact" className="bg-[#F8F5F5] pt-24 pb-24">
-        <h3 className="font-bold font-nunito text-[#707070] text-4xl opacity-80 ml-32">Contact</h3>
-          <div className='flex justify-start ml-32 mt-5'>
-            <a className="text-4xl text-black opacity-75 mr-8" target="_blank" href="https://www.linkedin.com/in/barbara-morantes-carvajal/" rel='noreferrer'>
-              <i className="fab fab fa-linkedin-in"></i>
-            </a>
-            <a className="text-4xl text-black opacity-75 mr-8" target="_blank" href="https://github.com/BarbDMC" rel='noreferrer'>
-              <i className="fab fa-github"></i>
-            </a>
-            <a className="text-4xl text-black opacity-75 mr-5" target="_blank" href="https://twitter.com/BarbDMG" rel='noreferrer'>
-              <i className="fab fa-twitter"></i>
-            </a>
-          </div>
+      <footer id="contact" className="bg-[#F8F5F5] h-96 -mt-44">
+        <h3 className="font-bold font-nunito text-[#707070] text-4xl opacity-80 ml-32 pt-32">Contact</h3>
+        <div className='inline-grid grid-cols-3 gap-4 ml-32 mt-5'>
+          <a className="text-4xl text-black opacity-75 mr-8" target="_blank" href="https://www.linkedin.com/in/barbara-morantes-carvajal/" rel='noreferrer'>
+            <i className="fab fab fa-linkedin-in"></i>
+          </a>
+          <a className="text-4xl text-black opacity-75 mr-8" target="_blank" href="https://github.com/BarbDMC" rel='noreferrer'>
+            <i className="fab fa-github"></i>
+          </a>
+          <a className="text-4xl text-black opacity-75 mr-5" target="_blank" href="https://twitter.com/BarbDMG" rel='noreferrer'>
+            <i className="fab fa-twitter"></i>
+          </a>
+        </div>
 
-        
-        <div className='flex flex-col bg-[#51E1A7] w-52'>
-          <form className="mr-20" action="/" method="POST">
-            <input className="firstFieldSpace formFields formText inputSize" type="text" id="firstName" name="firstName" placeholder="First Name" required />
-            <input className="fieldsSpace formFields formText inputSize" type="text" id="lastName" name="lastName" placeholder="Last Name" required />
-            <input className="fieldsSpace formFields formText inputSize"
+
+        <div className='relative bg-[#51E1A7] -top-96 left-1/2 w-2/5 rounded-lg'>
+          <form className="font-roboto grid text-xl pb-5 justify-items-center" action="/" method="POST">
+            <input className="mt-12 p-4 w-4/6 h-10 rounded-md" type="text" id="firstName" name="firstName" placeholder="First Name" required />
+            <input className="mt-7 p-4 w-4/6 h-10 rounded-md" type="text" id="lastName" name="lastName" placeholder="Last Name" required />
+            <input className="mt-7 p-4 w-4/6 h-10 rounded-md"
               type="email"
               id="email"
               name="email"
@@ -211,13 +211,12 @@ export default function Home() {
               required
               pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"
             />
-            <textarea className="fieldsSpace formFields formText textAreaSize" name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
-            <input className="formButton" type="submit" value="Send" />
+            <textarea className="mt-7 p-4 w-4/6 h-48 rounded-md resize-none" name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+            <input className="mt-5 bg-[#8089DF] opacity-90 text-white rounded-md w-48 h-10" type="submit" value="Send" />
           </form>
         </div>
       </footer>
-
-
+     
       <Script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossOrigin='anonymous' async />
     </div>
   )
