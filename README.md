@@ -1,34 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hello there, I'm Barbara Morantes
 
-## Getting Started
+- I'm full stack developer 👩🏽‍💻. 
+- I always give my best so my work and my relationships with the team are excellent 💯 . 
+- My main objective is to stay in constant development at a
+personal 🧘🏽‍♀️, academic 📚 and professional level 👩🏽‍💻.
 
-First, run the development server:
+## Hard skills
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Frontend
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- ![](https://camo.githubusercontent.com/5d3b0191832237fcbfc6d4497524e8bb547c6bfc9eafb738d5205c629d202067/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f68746d6c352532302d2532334533344632362e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465) ![](https://camo.githubusercontent.com/5ed492db9c79ad5990eda7dc80923377f0e7096b18a4d1e9b86c8987dc0e5aa5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f637373332532302d2532333135373242362e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d63737333266c6f676f436f6c6f723d7768697465) ![](https://camo.githubusercontent.com/62d37abe760867620e0baea1066303719d630a82936837ba7bff6b0c754e3c9f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a6176617363726970742532302d2532333332333333302e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d6a617661736372697074266c6f676f436f6c6f723d253233463744463145)  AngularJs  
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Backend
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+-   ![](https://camo.githubusercontent.com/cc3c3fe449ed17a84470ccb3a587b7c07360d21670d5e425e03ac2d44ffb03cd/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4e6f6465204a532d626c61636b2e7376673f7374796c653d666c61742d737175617265266c6f676f3d6e6f6465646f746a73) ![](https://camo.githubusercontent.com/0cb5fb212736b31fda8b20ca58a5af41afdf56438bfada117555d6a328c08a12/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d6f6e676f44422d626c61636b2e7376673f7374796c653d666c61742d737175617265266c6f676f3d6d6f6e676f6462) ![](https://camo.githubusercontent.com/a71f1a20d58a3506dd5f32dcb31461bd5102a0bd33dbf49db9195c589eaca8d7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f707974686f6e2532302d2532333134333534432e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d707974686f6e266c6f676f436f6c6f723d7768697465)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+### Testing
 
-To learn more about Next.js, take a look at the following resources:
+-   Jasmine, Cypress
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Soft skills
 
-## Deploy on Vercel
+-   English B1 🇺🇸.
+-   Results oriented 🎯.
+-   Highly organized 📶.
+-   Being resourceful 💡.
+-   Listening and communication skills 👂🏽📢.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Statistics 📊
+![](https://github-readme-stats.vercel.app/api?username=BarbDMC)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=BarbDMC&layout=compact)
+
+## Follow me! 👀
+
+[![Linkedin](https://camo.githubusercontent.com/6dc9828248fb64760c234f5b24c275a4912e9bb546c281d0c8e67cecb3381669/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4c696e6b6564496e2d626c75653f7374796c653d666c6174266c6f676f3d4c696e6b6564696e266c6f676f436f6c6f723d7768697465)](https://www.linkedin.com/in/barbara-morantes-carvajal/)  [![Twitter](https://camo.githubusercontent.com/6c3ee81ee87bfc10911ced45aabe7e15b296200bdfd8de4cbb47b3654c1ef210/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d547769747465722d626c75653f7374796c653d666c6174266c6f676f3d54776974746572266c6f676f436f6c6f723d7768697465)](https://twitter.com/BarbDMG)
+
