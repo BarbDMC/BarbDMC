@@ -155,13 +155,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="projects" className="mt-24">
+        <div id="projects" className="mt-36">
           <div className="flex flex-col items-center">
             <h2 className="font-nunito font-bold text-4xl text-gray-500 opacity-80">Projects</h2>
             <img src="/assets/img/titleLines.png" />
           </div>
 
-          <div className="mt-20 flex flex-col items-center">
+          <div className="flex flex-col items-center mt-20">
             <div className='relative z-50'>
               <img className="rounded-2xl opacity-95 w-[450px]" src="/assets/img/portfolio/mysql-logo.svg" />
             </div>
@@ -184,39 +184,35 @@ export default function Home() {
         </div>
       </main>
 
-      <footer id="contact" className="bg-[#F8F5F5] h-96 -mt-44">
-        <h3 className="font-bold font-nunito text-[#707070] text-4xl opacity-80 ml-32 pt-32">Contact</h3>
-        <div className='inline-grid grid-cols-3 gap-4 ml-32 mt-5'>
-          <a className="text-4xl text-black opacity-75 mr-8" target="_blank" href="https://www.linkedin.com/in/barbara-morantes-carvajal/" rel='noreferrer'>
-            <i className="fab fab fa-linkedin-in"></i>
-          </a>
-          <a className="text-4xl text-black opacity-75 mr-8" target="_blank" href="https://github.com/BarbDMC" rel='noreferrer'>
-            <i className="fab fa-github"></i>
-          </a>
-          <a className="text-4xl text-black opacity-75 mr-5" target="_blank" href="https://twitter.com/BarbDMG" rel='noreferrer'>
-            <i className="fab fa-twitter"></i>
-          </a>
-        </div>
-
-
-        <div className='relative bg-[#51E1A7] -top-96 left-1/2 w-2/5 rounded-lg'>
-          <form className="font-roboto grid text-xl pb-5 justify-items-center" action="/" method="POST">
-            <input className="mt-12 p-4 w-4/6 h-10 rounded-md" type="text" id="firstName" name="firstName" placeholder="First Name" required />
-            <input className="mt-7 p-4 w-4/6 h-10 rounded-md" type="text" id="lastName" name="lastName" placeholder="Last Name" required />
-            <input className="mt-7 p-4 w-4/6 h-10 rounded-md"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="E-mail"
-              required
-              pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"
-            />
-            <textarea className="mt-7 p-4 w-4/6 h-48 rounded-md resize-none" name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
-            <input className="mt-5 bg-[#8089DF] opacity-90 text-white rounded-md w-48 h-10" type="submit" value="Send" />
-          </form>
-        </div>
+      <footer id="contact" className="bg-[#F8F5F5] py-20 flex flex-col">
+       <div className='m-auto'>
+        <h3 className="font-bold font-nunito text-[#707070] text-4xl opacity-80">Contact</h3>
+          <div className='inline-grid grid-cols-3 gap-4'>
+            <a className="text-4xl text-black opacity-75" target="_blank" href="https://www.linkedin.com/in/barbara-morantes-carvajal/" rel='noreferrer'>
+              <i className="fab fab fa-linkedin-in"></i>
+            </a>
+            <a className="text-4xl text-black opacity-75" target="_blank" href="https://github.com/BarbDMC" rel='noreferrer'>
+              <i className="fab fa-github"></i>
+            </a>
+            <a className="text-4xl text-black opacity-75" target="_blank" href="https://twitter.com/BarbDMG" rel='noreferrer'>
+              <i className="fab fa-twitter"></i>
+            </a>
+          </div>
+       </div>
       </footer>
      
+      <Script
+        id='freshdesk-widget'
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.fwSettings={
+            'widget_id': 151000000646
+            };!function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}()
+          `
+        }}
+      /> 
+
+      <Script type='text/javascript' src='https://widget.freshworks.com/widgets/151000000646.js' async defer />
       <Script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossOrigin='anonymous' async />
     </div>
   )
