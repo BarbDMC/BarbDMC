@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
   return (
@@ -25,7 +26,13 @@ const Navbar = () => {
           <a>Contact me</a>
         </Link>
       </li>
-     
+    </ul>
+
+    <ul>
+      <li><Image src="" alt="LinkedIn Icon" /></li>
+      <li><Image src="" alt="Github Icon" /></li>
+      <li><Image src="" alt="Instagram Icon" /></li>
+      <li><Image src="" alt="Twitter Icon" /></li>
     </ul>
    </nav>
   )
