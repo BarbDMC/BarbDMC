@@ -1,14 +1,16 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import socialMediaIcons from '../socialMediaIcons';
 
 const Footer = () => {
   return (
     <div>
       <ul>
-        <li><Image src="" alt="LinkedIn Icon" /></li>
-        <li><Image src="" alt="Github Icon" /></li>
-        <li><Image src="" alt="Instagram Icon" /></li>
-        <li><Image src="" alt="Twitter Icon" /></li>
+        {
+          socialMediaIcons.map(({iconClass}) => (
+            <li key={iconClass}  className={iconClass}></li>
+          ))
+        
+        }
       </ul>
 
       <span>© {new Date().getFullYear()} | Designed by Barbara Morantes</span>

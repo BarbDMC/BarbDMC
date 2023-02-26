@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import navbarInfo from './navbarInfo';
+import socialMediaIcons from '../socialMediaIcons';
 
 const Navbar = () => {
   return (
@@ -19,11 +19,13 @@ const Navbar = () => {
     </ul>
 
     <ul>
-      <li><Image src="" alt="LinkedIn Icon" /></li>
-      <li><Image src="" alt="Github Icon" /></li>
-      <li><Image src="" alt="Instagram Icon" /></li>
-      <li><Image src="" alt="Twitter Icon" /></li>
+      {
+        socialMediaIcons.map(({iconClass}) => (
+          <li key={iconClass}  className={iconClass}></li>
+        ))
+      }
     </ul>
+    
    </nav>
   )
 }
