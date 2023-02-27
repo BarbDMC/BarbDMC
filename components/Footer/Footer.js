@@ -1,17 +1,10 @@
 import React from 'react';
-import socialMediaIcons from '../socialMediaIcons';
+import SocialMediaList from '../socialMediaList/socialMediaList';
 
 const Footer = () => {
   return (
     <div>
-      <ul>
-        {
-          socialMediaIcons.map(({iconClass}) => (
-            <li key={iconClass}  className={iconClass}></li>
-          ))
-        
-        }
-      </ul>
+      <SocialMediaList />
 
       <span>© {new Date().getFullYear()} | Designed by Barbara Morantes</span>
     </div>
