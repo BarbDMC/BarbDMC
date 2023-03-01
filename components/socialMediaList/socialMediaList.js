@@ -1,16 +1,20 @@
 
 import React from 'react';
+import Link from 'next/link';
 import socialMediaIcons from './socialMediaIcons';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const socialMediaList = () => {
   return (
-    <ul>
+    <ul className='flex flex-row p-4 mt-4'>
     {
-      socialMediaIcons.map(({iconClass}) => (
+      socialMediaIcons.map(({iconClass, url}) => (
         <li key={iconClass}>
-          <FontAwesomeIcon icon={faCoffee} style={{ fontSize: 100, color: 'orange' }}/>
+          <Link href={url} passHref>
+            <a className='block py-2 pl-3 pr-4' target="_blank">
+              <FontAwesomeIcon icon={iconClass} style={{ fontSize: 30, color: 'black' }}/>
+            </a>
+          </Link>
         </li>
       ))
     }
