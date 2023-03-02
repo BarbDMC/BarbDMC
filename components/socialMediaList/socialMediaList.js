@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const socialMediaList = () => {
   return (
-    <ul className='flex flex-row p-4 mt-4'>
+    <ul className='flex flex-row p-3 mt-3'>
     {
       socialMediaIcons.map(({iconClass, url}) => (
         <li key={iconClass}>
