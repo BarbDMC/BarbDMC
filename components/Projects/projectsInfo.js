@@ -11,7 +11,7 @@ module.exports = [
     imageSrc: '',
     altText: 'Platzi task project\'s image',
     title: 'Platzi task',
-    description: 'It\'s a to-do list web app that allows creating tasks with a basic login system. It has been made with Python, Flask, and Firebase. It&apos;s based on the project from Platzi&apos;s course of Flask.',
+    description: 'It\'s a to-do list web app that allows creating tasks with a basic login system. It has been made with Python, Flask, and Firebase. It\'s based on the project from Platzi\'s course of Flask.',
     url: 'https://github.com/BarbDMC/platzi-task'
   },
 ];
