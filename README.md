@@ -23,7 +23,7 @@ personal 🧘🏽‍♀️, academic 📚 and professional level 👩🏽‍💻
 
 ## Soft skills
 
--   English B1 🇺🇸.
+-   English B2 🇺🇸.
 -   Results oriented 🎯.
 -   Highly organized 📶.
 -   Being resourceful 💡.
