@@ -3,10 +3,10 @@ import SocialMediaList from '../socialMediaList/socialMediaList';
 
 const Footer = () => {
   return (
-    <div>
+    <div className='w-full flex justify-around'>
       <SocialMediaList />
 
-      <span>© {new Date().getFullYear()} | Designed by Barbara Morantes</span>
+      <span className='inline-flex items-center text-xs md:text-xl'>© {new Date().getFullYear()} | Designed by Barbara Morantes</span>
     </div>
   )
 }
