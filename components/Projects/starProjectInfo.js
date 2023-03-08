@@ -1,7 +1,7 @@
 
 module.exports = [
     {
-      imageSrc: '',
+      imageSrc: '/assets/images/inclusion.webp',
       altText: 'Inclusion at work project\'s image',
       title: 'Inclusion at work (In progress)',
       description: 'The inclusion at-work system is going to be a web app focused on covering the needs of the company\'s employees that need to report incidents of workplace harassment that may occur by discrimination.',
