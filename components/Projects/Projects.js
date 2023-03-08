@@ -6,41 +6,47 @@ import starProjectInfo from './starProjectInfo';
 
 const Projects = () => {
   return (
-    <section className='pt-32'>
+    <section id='projects' className='pt-32'>
       <h2 className='text-center font-bold text-3xl' >Best Projects</h2>   
 
-      {starProjectInfo.map((info) => (
-        <div key={info.title} className='flex pt-14 pl-24 pr-24'>
-          <div className='border rounded-lg content-center mr-10 p-4 w-64 grow'>
-            <Image src={info.imageSrc} 
-                  alt={info.altText}
-                  width={250} height={250}
-            />
-            <h3 className='text-center font-bold text-xl pb-5'>{info.title}</h3>
-            <p>{info.description}</p>
+     <div className='pt-14 px-24'>
+        {starProjectInfo.map((info) => (
+          <div key={info} className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <Image src={info.imageSrc} 
+                          alt={info.altText}
+                          width={1250} height={250}
+                          className="rounded-t-lg"
+                />
+              <div className="p-5">
+                  <h3 className="mb-2 text-2xl font-bold text-center tracking-tight text-gray-900 dark:text-white">{info.title}</h3>
+                  <p className="mb-3 font-normal text-justify dark:text-gray-400">{info.description}</p>
 
-            <Link href={info.url} passHref>
-              <a className='border rounded-lg mt-5 w-36' target="_blank">See this project</a>
-            </Link>
-          </div>
-        </div>
-      ))}
+                  <div className="w-full font-medium rounded-lg text-sm px-5 pt-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                      <a href={info.url} className='px-3 py-2 text-md font-bold border rounded-lg dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800' target="_blank" rel="noreferrer">See this project</a>
+                  </div>
+              </div>
+           </div>
+        ))}
+     </div>
 
       
-     <div className='flex pt-14 pl-24 pr-24'>
-      {projectsInfo.map((info) => (
-          <div key={info.title} className='flex-col border rounded-lg content-center mr-10 p-4'>
-            <Image src={info.imageSrc} 
-                  alt={info.altText}
-                  width={250} height={250}
-            />
-            <h3 className='text-center font-bold text-xl pb-5'>{info.title}</h3>
-            <p className='text-justify'>{info.description}</p>
+     <div className='flex pt-14 px-24'>
+      {projectsInfo.map((info, index) => (
+           <div key={info} className={"w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" + (index === 0 ? ' mr-8' : '')}>
+              <Image src={info.imageSrc} 
+                          alt={info.altText}
+                          width={625} height={250}
+                          className="rounded-t-lg"
+                />
+              <div className="p-5">
+                  <h3 className="mb-2 text-2xl font-bold text-center tracking-tight text-gray-900 dark:text-white">{info.title}</h3>
+                  <p className="mb-3 font-normal text-justify dark:text-gray-400">{info.description}</p>
 
-            <Link href={info.url} passHref>
-              <a className='justify-center border rounded-lg mt-5 w-36' target="_blank">See this project</a>
-            </Link>
-          </div>
+                  <div className="w-full font-medium rounded-lg text-sm px-5 pt-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                      <a href={info.url} className='px-3 py-2 text-md font-bold border rounded-lg dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800' target="_blank" rel="noreferrer">See this project</a>
+                  </div>
+              </div>
+        </div>
         ))}
      </div>
     </section>
