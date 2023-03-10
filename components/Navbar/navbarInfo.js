@@ -4,12 +4,12 @@ module.exports = [
     title: 'About me'
   },
   {
-    url: '#skills',
-    title: 'Work skills'
-  },
-  {
     url: '#projects',
     title: 'Best projects'
+  },
+  {
+    url: '#skills',
+    title: 'Work skills'
   },
   {
     url: '#contact',

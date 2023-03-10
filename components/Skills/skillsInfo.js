@@ -1,21 +1,23 @@
+import { faWindowRestore, faDatabase, faClipboardCheck, faPeopleGroup } from '@fortawesome/free-solid-svg-icons'
+
 module.exports = [
   {
-    icon: '',
+    icon: faPeopleGroup,
     title: 'Soft skills',
     list: ['Self-Taught', 'Persistent', 'Communicative', 'Organized', 'Methodical']
   },
   {
-    icon: '',
+    icon: faWindowRestore,
     title: 'Frontend',
     list: ['HTML', 'CSS', 'AngularJs', 'JavaScript']
   },
   {
-    icon: '',
+    icon: faDatabase,
     title: 'Backend',
     list: ['NodeJs', 'MongoDB', 'Python', 'SQL']
   },
   {
-    icon: '',
+    icon: faClipboardCheck,
     title: 'Testing',
     list: ['Jasmine', 'Jest', 'Cypress']
   },
