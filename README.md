@@ -1,9 +1,10 @@
 # Hello there, I'm Barbara Morantes
 
-- I'm full stack developer 👩🏽‍💻. 
-- I always give my best so my work and my relationships with the team are excellent 💯 . 
-- My main objective is to stay in constant development at a
-personal 🧘🏽‍♀️, academic 📚 and professional level 👩🏽‍💻.
+- I'm a Full Stack developer that wants to use technology to build useful solutions that will enhance people's lives by maximizing the effect that technology can provide 👩🏽‍💻.
+- I'm a communicative, persistent 👩🏽‍💻, and self-taught person 📚. 
+- who always stays up-to-date with industry trends in order to provide better solutions. 💯 . 
+- Because of this, I've been learning technologies like JavaScript, AngularJS, NodeJS, and MongoDB in order to collaborate in the education sector.
+- In addition, I want to keep developing myself since I want to contribute to fields like volunteering, E-learning, and accessibility.
 
 ## Hard skills
 
