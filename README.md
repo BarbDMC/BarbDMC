@@ -1,7 +1,7 @@
 # Hello there, I'm Barbara Morantes
 
 - I'm a Full Stack developer that wants to use technology to build useful solutions that will enhance people's lives by maximizing the effect that technology can provide 👩🏽‍💻.
-- I'm a communicative, persistent 👩🏽‍💻, and self-taught person 📚. 
+- I'm a communicative 👂🏽📢, persistent 👩🏽‍💻, and self-taught person 📚. 
 - who always stays up-to-date with industry trends in order to provide better solutions. 💯 . 
 - Because of this, I've been learning technologies like JavaScript, AngularJS, NodeJS, and MongoDB in order to collaborate in the education sector.
 - In addition, I want to keep developing myself since I want to contribute to fields like volunteering, E-learning, and accessibility.
@@ -24,7 +24,7 @@
 
 ## Soft skills
 
--   English B2 🇺🇸.
+-   English B2.
 -   Results oriented 🎯.
 -   Highly organized 📶.
 -   Being resourceful 💡.
