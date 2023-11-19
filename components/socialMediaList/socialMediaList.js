@@ -6,12 +6,12 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const socialMediaList = () => {
   return (
-    <ul className='flex items-center'>
+    <ul className='flex justify-start items-start flex-row grow-0 shrink-0 basis-auto'>
       {
         socialMediaIcons.map(({iconClass, url}) => (
           <li key={iconClass}>
             <Link href={url} passHref>
-              <a className='sm:py-2 sm:pl-3 sm:pr-4 pl-1 pr-1' target="_blank">
+              <a className='w-8 h-8 text-[rgba(41,55,74,1)] flex grow-0 shrink-0 basis-auto ml-4' target="_blank">
                 <FontAwesomeIcon icon={iconClass} style={{ fontSize: 30, color: 'black' }}/>
               </a>
             </Link>
