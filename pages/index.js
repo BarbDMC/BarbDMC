@@ -12,9 +12,9 @@ export default function Home() {
     <Navbar />
     <Hero />
     <AboutMe />
-    <Projects />
-    <Skills />
-    <Footer />
+    {/* <Projects /> */}
+    {/* <Skills /> */}
+    {/* <Footer /> */}
    </div>
   )
 }
