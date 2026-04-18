@@ -1,5 +1,4 @@
-
-module.exports = [
+const projectsInfo = [
   {
     imageSrc: '/assets/images/database.png',
     altText: 'Database project\'s image',
@@ -15,3 +14,5 @@ module.exports = [
     url: 'https://github.com/BarbDMC/platzi-task'
   },
 ];
+
+export default projectsInfo;

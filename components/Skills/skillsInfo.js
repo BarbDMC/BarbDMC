@@ -1,6 +1,6 @@
 import { faWindowRestore, faDatabase, faClipboardCheck, faPeopleGroup } from '@fortawesome/free-solid-svg-icons'
 
-module.exports = [
+const skillsInfo = [
   {
     icon: faPeopleGroup,
     title: 'Soft skills',
@@ -22,3 +22,5 @@ module.exports = [
     list: ['Jasmine', 'Jest', 'Cypress']
   },
 ];
+
+export default skillsInfo;

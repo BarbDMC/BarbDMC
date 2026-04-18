@@ -1,5 +1,4 @@
-
-module.exports = [
+const starProjectInfo = [
     {
       imageSrc: '/assets/images/pico&placa.png',
       altText: 'Pico and Placa project\'s image',
@@ -8,3 +7,5 @@ module.exports = [
       url: ''
     }
 ];
+
+export default starProjectInfo;

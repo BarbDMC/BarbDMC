@@ -1,4 +1,4 @@
-module.exports = [
+const navbarInfo = [
   {
     url: '#about',
     title: 'About me'
@@ -16,3 +16,5 @@ module.exports = [
     title: 'Contact me'
   }
 ];
+
+export default navbarInfo;

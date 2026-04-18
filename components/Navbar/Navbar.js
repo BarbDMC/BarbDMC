@@ -1,8 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { useState } from 'react';
 import navbarInfo from './navbarInfo';
-import SocialMediaList from '../socialMediaList/socialMediaList';
+
+const SocialMediaList = dynamic(() => import('../socialMediaList/socialMediaList'), {
+  ssr: false,
+});
 
 const Navbar = () => {
 
@@ -26,8 +30,11 @@ const Navbar = () => {
             {
                 navbarInfo.map(({url, title}) => (
                   <li key={title}>
-                    <Link href={url} passHref>
-                      <a className='[font-family:Signika_Negative] text-2xl font-bold  text-[rgba(41,55,74,1)]  md:border-0 md:p-0'>{title}</a >
+                    <Link
+                      href={url}
+                      className='[font-family:Signika_Negative] text-2xl font-bold  text-[rgba(41,55,74,1)]  md:border-0 md:p-0'
+                    >
+                      {title}
                     </Link>
                   </li>
                 ))
