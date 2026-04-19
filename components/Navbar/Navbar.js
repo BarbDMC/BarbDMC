@@ -3,70 +3,94 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { useState } from 'react';
 import navbarInfo from './navbarInfo';
+import { Menu, X } from 'lucide-react';
+import { Button } from '../ui/button';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '../ui/sheet';
 
 const SocialMediaList = dynamic(() => import('../socialMediaList/socialMediaList'), {
   ssr: false,
 });
 
-const linkClassName =
-  'text-sm font-bold text-white drop-shadow-sm transition hover:text-white/90 sm:text-base md:text-lg lg:text-2xl';
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const linkItems = navbarInfo.map(({ url, title }) => (
-    <li key={title}>
-      <Link href={url} className={linkClassName} onClick={() => setIsOpen(false)}>
-        {title}
-      </Link>
-    </li>
+  const linkClassName =
+    'text-base font-medium text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 transition-colors duration-200';
+
+  const navLinks = navbarInfo.map(({ url, title }) => (
+    <Link
+      key={title}
+      href={url}
+      className={linkClassName}
+      onClick={() => setIsOpen(false)}
+    >
+      {title}
+    </Link>
+  ));
+
+  const mobileNavLinks = navbarInfo.map(({ url, title }) => (
+    <Link
+      key={title}
+      href={url}
+      className="block px-4 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
+      onClick={() => setIsOpen(false)}
+    >
+      {title}
+    </Link>
   ));
 
   return (
-    <nav className="relative z-20 w-full" aria-label="Primary">
-      {/* Mobile: hamburger + social */}
-      <div className="flex items-center justify-between md:hidden">
-        <button
-          onClick={() => setIsOpen((o) => !o)}
-          type="button"
-          className="inline-flex shrink-0 items-center rounded-lg p-2 text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/40"
-          aria-expanded={isOpen}
-          aria-controls="navbar-links-mobile"
-        >
-          <span className="sr-only">Open main menu</span>
-          <svg
-            className="h-6 w-6"
-            aria-hidden="true"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </button>
-        <SocialMediaList light />
-      </div>
+    <nav className="sticky top-0 z-40 w-full bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 backdrop-blur-sm support-backdrop-filter">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <Link href="/" className="flex-shrink-0 font-bold text-2xl text-slate-900 dark:text-white">
+            Portfolio
+          </Link>
 
-      {isOpen ? (
-        <ul
-          id="navbar-links-mobile"
-          className="mt-3 flex flex-col gap-3 rounded-xl border border-white/25 bg-purple-950/45 px-4 py-3 backdrop-blur-md md:hidden"
-        >
-          {linkItems}
-        </ul>
-      ) : null}
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            {navLinks}
+          </div>
 
-      {/* Desktop: links + social */}
-      <div className="hidden items-start justify-between gap-8 md:flex lg:gap-12 xl:gap-16">
-        <ul id="navbar-links-desktop" className="flex flex-row flex-wrap items-center gap-4 lg:gap-8 xl:gap-10">
-          {linkItems}
-        </ul>
-        <div className="shrink-0 pt-0.5">
-          <SocialMediaList light />
+          {/* Desktop Social + Mobile Menu */}
+          <div className="flex items-center gap-4">
+            <div className="hidden md:block">
+              <SocialMediaList light={false} />
+            </div>
+
+            {/* Mobile Menu */}
+            <div className="md:hidden">
+              <Sheet open={isOpen} onOpenChange={setIsOpen}>
+                <SheetTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="h-10 w-10"
+                  >
+                    {isOpen ? (
+                      <X className="h-6 w-6" />
+                    ) : (
+                      <Menu className="h-6 w-6" />
+                    )}
+                    <span className="sr-only">Toggle menu</span>
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                  <SheetHeader>
+                    <SheetTitle className="text-left text-2xl font-bold">Menu</SheetTitle>
+                  </SheetHeader>
+                  <div className="flex flex-col gap-2 mt-8">
+                    {mobileNavLinks}
+                  </div>
+                  <div className="mt-8 pt-8 border-t border-slate-200 dark:border-slate-800">
+                    <p className="text-sm font-semibold text-slate-900 dark:text-white mb-4">Follow me</p>
+                    <SocialMediaList light={false} />
+                  </div>
+                </SheetContent>
+              </Sheet>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -74,3 +98,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

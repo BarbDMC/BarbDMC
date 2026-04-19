@@ -5,5 +5,9 @@ config.autoAddCss = false;
 import 'font-awesome/css/font-awesome.min.css';
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <div className="bg-white dark:bg-slate-950 transition-colors duration-300">
+      <Component {...pageProps} />
+    </div>
+  );
 }  

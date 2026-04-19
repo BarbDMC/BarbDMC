@@ -1,111 +1,134 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Nunito } from 'next/font/google';
 import projectsInfo from './projectsInfo';
 import starProjectInfo from './starProjectInfo';
-
-const nunito = Nunito({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  display: 'swap',
-});
-
-/** Figma: linear, left → right — #410538 60% @ 0%, #F98AAA 72% @ 100% */
-const sectionGradient =
-  'linear-gradient(to bottom, rgba(65,5,56,0.6) 0%, rgba(249,138,170,0.72) 100%)';
-
-const projectButtonClass =
-  'inline-block rounded-lg bg-white px-7 py-2.5 text-sm font-semibold text-[#410538] shadow-sm transition hover:bg-white/95 focus:outline-none focus:ring-2 focus:ring-white/60 md:px-8 md:py-3 md:text-base';
+import { Button } from '../ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card';
+import { ExternalLink, Github } from 'lucide-react';
 
 const Projects = () => {
   return (
     <section
       id="projects"
-      className={`${nunito.className} bg-white px-3 py-14 sm:px-5 sm:py-16 md:px-8 md:py-20 lg:px-10 lg:py-24 xl:px-12`}
+      className="relative py-20 md:py-32"
       aria-labelledby="projects-heading"
     >
-      <div className="mx-auto w-full max-w-[min(100%,1400px)]">
-        <div
-          className="rounded-[1.75rem] px-6 py-10 text-center text-white shadow-[0_16px_48px_rgba(0,0,0,0.14)] sm:rounded-[2rem] sm:px-10 sm:py-12 md:px-14 md:py-14 lg:px-16 lg:py-16 xl:px-20 xl:py-[4.25rem]"
-          style={{ background: sectionGradient }}
-        >
-          <h2
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-slate-50 via-white to-slate-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950" />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="space-y-4 mb-16 text-center">
+          <h2 
             id="projects-heading"
-            className="text-3xl font-bold tracking-tight sm:text-4xl md:text-[2.5rem]"
+            className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white"
           >
-            Best Projects
+            Featured Projects
           </h2>
+          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+            A selection of my best work showcasing diverse skills and technologies
+          </p>
+        </div>
 
-          {starProjectInfo.map((project) => (
-            <article key={project.title} className="mt-10 md:mt-12">
-              <div className="relative mx-auto aspect-[21/9] w-full max-h-[220px] overflow-hidden rounded-2xl sm:max-h-[260px] md:max-h-[280px]">
+        {/* Featured Projects */}
+        <div className="space-y-12 mb-20">
+          {starProjectInfo.map((project, index) => (
+            <div key={project.title} className={`grid md:grid-cols-2 gap-8 lg:gap-12 items-center ${index % 2 === 1 ? 'md:grid-cols-2 md:[&_>*:first-child]:order-2 md:[&_>*:last-child]:order-1' : ''}`}>
+              {/* Image */}
+              <div className="relative group overflow-hidden rounded-2xl h-96">
                 <Image
                   src={project.imageSrc}
                   alt={project.altText}
                   fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 1400px"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
               </div>
 
-              <h3 className="mt-6 text-xl font-bold sm:text-2xl md:text-3xl">{project.title}</h3>
+              {/* Content */}
+              <div className="space-y-6">
+                <div className="space-y-3">
+                  <h3 className="text-3xl font-bold text-slate-900 dark:text-white">
+                    {project.title}
+                  </h3>
+                  <div className="space-y-3">
+                    {project.paragraphs.map((text) => (
+                      <p key={text} className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        {text}
+                      </p>
+                    ))}
+                  </div>
+                </div>
 
-              <div className="mx-auto mt-4 max-w-4xl space-y-4 text-left text-sm leading-relaxed sm:text-base md:mt-5 md:text-lg md:leading-relaxed">
-                {project.paragraphs.map((text) => (
-                  <p key={text}>{text}</p>
-                ))}
-              </div>
-
-              <div className="mt-6 md:mt-8">
-                {project.url ? (
-                  <Link
-                    href={project.url}
-                    className={projectButtonClass}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    See this project
-                  </Link>
-                ) : (
-                  <span className={`${projectButtonClass} cursor-default opacity-90`}>
-                    See this project
-                  </span>
+                {/* CTA Button */}
+                {project.url && (
+                  <div className="flex gap-3 pt-4">
+                    <Link href={project.url} target="_blank" rel="noopener noreferrer">
+                      <Button className="gap-2">
+                        <ExternalLink className="w-4 h-4" />
+                        View Project
+                      </Button>
+                    </Link>
+                  </div>
                 )}
               </div>
-            </article>
+            </div>
           ))}
+        </div>
 
-          <div className="mt-14 grid grid-cols-1 gap-12 md:mt-16 md:grid-cols-2 md:gap-8 lg:gap-10">
+        {/* Other Projects Grid */}
+        <div className="space-y-8">
+          <div className="space-y-2">
+            <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">
+              Other Projects
+            </h3>
+            <p className="text-slate-600 dark:text-slate-400">
+              Explore more of my work and side projects
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projectsInfo.map((project) => (
-              <article key={project.title} className="flex flex-col items-center text-center">
-                <h3 className="order-1 text-lg font-bold sm:text-xl md:text-2xl">{project.title}</h3>
-
-                <div className="relative order-2 mt-4 aspect-[4/3] w-full overflow-hidden rounded-xl md:mt-5">
+              <Card 
+                key={project.title}
+                className="overflow-hidden flex flex-col transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group border-slate-200 dark:border-slate-800"
+              >
+                {/* Project Image */}
+                <div className="relative h-48 w-full overflow-hidden bg-slate-100 dark:bg-slate-800">
                   <Image
                     src={project.imageSrc}
                     alt={project.altText}
                     fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 650px"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
                 </div>
 
-                <p className="order-3 mt-4 w-full max-w-prose flex-1 text-left text-sm leading-relaxed sm:text-base md:mt-5">
-                  {project.description}
-                </p>
+                <CardHeader className="space-y-2">
+                  <CardTitle className="text-lg text-slate-900 dark:text-white">
+                    {project.title}
+                  </CardTitle>
+                </CardHeader>
 
-                <div className="order-4 mt-5 md:mt-6">
-                  <Link
+                <CardContent className="flex-1 flex flex-col justify-between space-y-4">
+                  <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                    {project.description}
+                  </p>
+
+                  <Link 
                     href={project.url}
-                    className={projectButtonClass}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="w-full"
                   >
-                    See this project
+                    <Button variant="outline" className="w-full gap-2">
+                      <ExternalLink className="w-4 h-4" />
+                      View
+                    </Button>
                   </Link>
-                </div>
-              </article>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
