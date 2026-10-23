@@ -4,9 +4,9 @@ import { CheckCircle2 } from 'lucide-react';
 
 const AboutMe = () => {
   const highlights = [
-    'Full Stack Developer with focus on meaningful solutions',
-    'Passionate about technology in education',
-    'Committed to accessibility and inclusivity',
+    'Data Engineer specializing in pipeline orchestration and system reliability',
+    'Passionate about EdTech and Green transition data systems',
+    'Committed to data integrity and performance',
     'Continuous learner and developer'
   ];
 
@@ -38,19 +38,17 @@ const AboutMe = () => {
           <div className="space-y-6">
             <div className="space-y-4">
               <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-                I&apos;m a Full Stack developer passionate about using technology to build useful solutions 
-                that enhance people&apos;s lives and maximize the positive impact technology can provide.
+                I&apos;m a Data Engineer with 5 years of software development experience, specializing in 
+                data architecture, pipeline orchestration, and system reliability. I build the infrastructure 
+                that allows organizations to process high-velocity data securely and efficiently.
               </p>
 
               <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-                I continuously develop myself by learning modern technologies like JavaScript, React, 
-                Node.js, MongoDB, and many others to collaborate effectively in the education sector 
-                and build scalable applications.
-              </p>
-
-              <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-                I&apos;m committed to contributing to fields like volunteering, E-learning, and web accessibility, 
-                believing that technology should be inclusive and available to everyone.
+                My technical focus centers on the Modern Data Stack (Python, dbt, Snowflake, PostgreSQL) 
+                and cloud platforms (AWS), ensuring high data integrity and performance. I am particularly 
+                passionate about applying data engineering to the EdTech sector (learning analytics) and the 
+                Green transition (carbon tracking platforms), where reliable data is critical for driving 
+                positive, large-scale impact.
               </p>
             </div>
 
@@ -75,8 +73,8 @@ const AboutMe = () => {
                 <div className="space-y-4">
                   <div className="space-y-1">
                     <p className="text-sm font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wide">Experience</p>
-                    <p className="text-3xl font-bold text-slate-900 dark:text-white">2+ Years</p>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">In full stack development</p>
+                    <p className="text-3xl font-bold text-slate-900 dark:text-white">5+ Years</p>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">In software development</p>
                   </div>
 
                   <div className="border-t border-slate-200 dark:border-slate-800 pt-4 space-y-1">
@@ -87,8 +85,8 @@ const AboutMe = () => {
 
                   <div className="border-t border-slate-200 dark:border-slate-800 pt-4 space-y-1">
                     <p className="text-sm font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wide">Focus</p>
-                    <p className="text-3xl font-bold text-slate-900 dark:text-white">Quality</p>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">Education & Accessibility</p>
+                    <p className="text-3xl font-bold text-slate-900 dark:text-white">Reliability</p>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">EdTech & Sustainability</p>
                   </div>
                 </div>
               </CardContent>
@@ -105,10 +103,10 @@ const AboutMe = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <CardTitle className="text-lg">Quality Code</CardTitle>
+              <CardTitle className="text-lg">Data Reliability</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-slate-600 dark:text-slate-400">Writing clean, maintainable, and well-tested code</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400">Writing clean, maintainable dbt models and tested pipelines</p>
             </CardContent>
           </Card>
 
@@ -119,10 +117,10 @@ const AboutMe = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                 </svg>
               </div>
-              <CardTitle className="text-lg">Innovation</CardTitle>
+              <CardTitle className="text-lg">Performance Optimization</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-slate-600 dark:text-slate-400">Creating modern solutions with latest technologies</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400">Tuning SQL queries and reducing analytical latency</p>
             </CardContent>
           </Card>
 
@@ -133,10 +131,10 @@ const AboutMe = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <CardTitle className="text-lg">Impact</CardTitle>
+              <CardTitle className="text-lg">Domain Impact</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-slate-600 dark:text-slate-400">Building solutions that make a real difference</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400">Powering educational and sustainability data systems</p>
             </CardContent>
           </Card>
         </div>

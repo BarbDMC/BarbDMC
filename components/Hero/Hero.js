@@ -28,14 +28,14 @@ const Hero = () => {
                 Welcome to my portfolio
               </p>
               <h1 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-white leading-tight">
-                 Full Stack Developer {/*&{' '}
+                 Data Engineer {/*&{' '}
                 <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
                   Educator
                 </span> */}
               </h1>
               <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl">
-                I build inclusive and educational web solutions that make a difference. 
-                Passionate about technology, learning, and creating meaningful digital experiences.
+                I build robust data pipelines and scalable infrastructure that power learning analytics and climate-impact systems.
+                Passionate about data modeling, ETL/ELT orchestration, and turning raw data into reliable insights.
               </p>
             </div>
 
@@ -56,7 +56,7 @@ const Hero = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 pt-12 border-t border-slate-200 dark:border-slate-800">
               <div className="space-y-2">
-                <p className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">2+</p>
+                <p className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">5+</p>
                 <p className="text-sm text-slate-600 dark:text-slate-400">Years Experience</p>
               </div>
               <div className="space-y-2">
