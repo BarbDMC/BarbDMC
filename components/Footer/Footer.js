@@ -78,7 +78,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="mailto:contact@example.com"
+                  href="mailto:barbaradmorantesc@gmail.com"
                   className="text-slate-400 hover:text-white transition-colors duration-200"
                 >
                   Email

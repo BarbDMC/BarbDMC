@@ -18,25 +18,25 @@ const Navbar = () => {
     'text-base font-medium text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100 transition-colors duration-200';
 
   const navLinks = navbarInfo.map(({ url, title }) => (
-    <Link
+    <a
       key={title}
       href={url}
       className={linkClassName}
       onClick={() => setIsOpen(false)}
     >
       {title}
-    </Link>
+    </a>
   ));
 
   const mobileNavLinks = navbarInfo.map(({ url, title }) => (
-    <Link
+    <a
       key={title}
       href={url}
       className="block px-4 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
       onClick={() => setIsOpen(false)}
     >
       {title}
-    </Link>
+    </a>
   ));
 
   return (
