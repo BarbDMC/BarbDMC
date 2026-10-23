@@ -12,7 +12,7 @@ const navbarInfo = [
     title: 'Work skills'
   },
   {
-    url: '#contact',
+    url: 'mailto:barbaradmorantesc@gmail.com',
     title: 'Contact me'
   }
 ];
