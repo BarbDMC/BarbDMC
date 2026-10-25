@@ -5,7 +5,9 @@ import projectsInfo from './projectsInfo';
 import starProjectInfo from './starProjectInfo';
 import { Button } from '../ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Projects = () => {
   return (
@@ -62,14 +64,24 @@ const Projects = () => {
                 </div>
 
                 {/* CTA Button */}
-                {project.url && (
-                  <div className="flex gap-3 pt-4">
-                    <Link href={project.url} target="_blank" rel="noopener noreferrer">
-                      <Button className="gap-2">
-                        <ExternalLink className="w-4 h-4" />
-                        View Project
-                      </Button>
-                    </Link>
+                {(project.url || project.demoUrl) && (
+                  <div className="flex flex-wrap gap-3 pt-4">
+                    {project.url && (
+                      <Link href={project.url} target="_blank" rel="noopener noreferrer">
+                        <Button className="gap-2">
+                          <FontAwesomeIcon icon={faGithub} className="w-4 h-4" />
+                          View Project
+                        </Button>
+                      </Link>
+                    )}
+                    {project.demoUrl && (
+                      <Link href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                        <Button variant="outline" className="gap-2">
+                          <ExternalLink className="w-4 h-4" />
+                          Live Demo
+                        </Button>
+                      </Link>
+                    )}
                   </div>
                 )}
               </div>

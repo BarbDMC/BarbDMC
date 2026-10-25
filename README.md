@@ -55,6 +55,7 @@
 ### Clouds
 
 - [![AWS](https://img.shields.io/badge/AWS%20Cloud%20Practitioner-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white)](https://www.credly.com/badges/389138ba-f9a8-49e4-aa7b-b5e7146d8f7f/public_url)
+![AWS AI Practitioner](https://img.shields.io/badge/AWS%20AI%20Practitioner-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white)
 ![GCP](https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 
 
