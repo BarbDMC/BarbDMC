@@ -4,22 +4,22 @@ const skillsInfo = [
   {
     icon: faLayerGroup,
     title: 'Data Warehousing & Orchestration',
-    list: ['Snowflake', 'dbt', 'Data Modeling', 'ELT/ETL Pipelines']
+    list: ['Snowflake', 'dbt', 'Apache Airflow', 'Data Modeling (Star Schema)', 'ELT/ETL Pipelines']
   },
   {
     icon: faDatabase,
     title: 'Databases & Querying',
-    list: ['PostgreSQL', 'MongoDB', 'SQL Optimization', 'Prisma']
+    list: ['PostgreSQL', 'Supabase', 'MongoDB', 'SQL Optimization', 'Prisma']
   },
   {
     icon: faCode,
     title: 'Programming Languages',
-    list: ['Python', 'SQL', 'Java (Spring Boot)', 'Node.js', 'TypeScript']
+    list: ['Python (pandas, Streamlit, Plotly)', 'SQL', 'Java (Spring Boot)', 'Node.js', 'TypeScript']
   },
   {
     icon: faCloudArrowUp,
     title: 'Cloud & Infrastructure',
-    list: ['AWS (Cloud Practitioner)', 'Docker', 'Datadog (Observability)']
+    list: ['AWS Certified Cloud Practitioner', 'AWS Certified AI Practitioner', 'Docker & Docker Compose', 'MinIO (S3 Object Storage)', 'Datadog (Observability)']
   },
   {
     icon: faClipboardCheck,

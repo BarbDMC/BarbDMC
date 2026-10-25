@@ -1,13 +1,14 @@
 const starProjectInfo = [
   {
-    imageSrc: '/assets/images/pico&placa.png',
-    altText: 'Pico y Placa Predictor preview',
-    title: 'Pico y Placa Predictor',
+    imageSrc: '/assets/images/learning-junyi-pipeline.png',
+    altText: 'Junyi Learning Pipeline dashboard preview',
+    title: 'Junyi Learning Pipeline',
     paragraphs: [
-      'The project allows users to consult if whether or not their car can be on the road based on their license plate number.',
-      'The project was done with JavaScript, NodeJs, and Express.js.',
+      'An end-to-end data pipeline that turns 16 million student problem attempts from the Junyi Academy dataset into a star schema and an interactive learning analytics dashboard.',
+      'Airflow orchestrates the load from a MinIO (S3) data lake into PostgreSQL / Supabase, dbt models the staging and marts layers, and Streamlit with Plotly serves the dashboard, all running on Docker.',
     ],
-    url: '',
+    url: 'https://github.com/BarbDMC/learning-junyi-pipeline',
+    demoUrl: 'https://learning-junyi-pipeline.streamlit.app/',
   },
 ];
 
