@@ -4,7 +4,7 @@ const skillsInfo = [
   {
     icon: faLayerGroup,
     title: 'Data Warehousing & Orchestration',
-    list: ['Snowflake', 'dbt', 'Apache Airflow', 'Data Modeling (Star Schema)', 'ELT/ETL Pipelines']
+    list: ['Snowflake', 'dbt', 'Apache Airflow', 'Data Modeling (Star Schema)', 'ELT/ETL Pipelines', 'REST API Ingestion']
   },
   {
     icon: faDatabase,

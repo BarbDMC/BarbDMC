@@ -128,17 +128,32 @@ const Projects = () => {
                     {project.description}
                   </p>
 
-                  <Link 
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full"
-                  >
-                    <Button variant="outline" className="w-full gap-2">
-                      <ExternalLink className="w-4 h-4" />
-                      View
-                    </Button>
-                  </Link>
+                  <div className="flex gap-3">
+                    <Link 
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1"
+                    >
+                      <Button variant="outline" className="w-full gap-2">
+                        <FontAwesomeIcon icon={faGithub} className="w-4 h-4" />
+                        GitHub
+                      </Button>
+                    </Link>
+                    {project.demoUrl && (
+                      <Link
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1"
+                      >
+                        <Button className="w-full gap-2">
+                          <ExternalLink className="w-4 h-4" />
+                          Live Demo
+                        </Button>
+                      </Link>
+                    )}
+                  </div>
                 </CardContent>
               </Card>
             ))}
