@@ -1,11 +1,12 @@
 const projectsInfo = [
   {
-    imageSrc: '/assets/images/toDoList.png',
-    altText: 'Platzi task project preview',
-    title: 'Platzi task',
+    imageSrc: '/assets/images/ghg-emissions-ledger-dashboard.png',
+    altText: 'GHG Emissions Ledger ESG dashboard preview',
+    title: 'GHG Emissions Ledger',
     description:
-      "It's a to-do list web app that allows creating tasks with a basic login system. It has been made with Python, Flask, and Firebase.",
-    url: 'https://github.com/BarbDMC/platzi-task',
+      'An auditable Scope 1 & 2 carbon ledger built from multi-currency, multi-unit energy invoices. Airflow loads Climatiq emission factors and invoices from MinIO into an append-only PostgreSQL / Supabase warehouse, dbt deduplicates and tests the data, and a Streamlit ESG dashboard reports the CO₂e.',
+    url: 'https://github.com/BarbDMC/ghg-emissions-ledger',
+    demoUrl: 'https://ghg-emissions-ledger.streamlit.app/',
   },
   {
     imageSrc: '/assets/images/pokeApi.png',
